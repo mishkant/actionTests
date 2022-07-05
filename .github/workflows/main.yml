@@ -3,8 +3,6 @@ name: myTestAutomation
 on:
   push:
     branches: [ "main" ]
-    
-  workflow_dispatch:
 
 jobs:
 
@@ -12,14 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      #- uses: actions/checkout@v3
-
       - name: Hello message
         run : echo "Hello, world!"
 
-
   bye:
-    
     runs-on: ubuntu-latest
     
     steps:
